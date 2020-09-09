@@ -426,9 +426,6 @@ section.jumbotron-fluid .pattern-1-mobile {
   top: -50px;
   right: 0;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 @media (min-width: 992px) {
@@ -458,9 +455,10 @@ section.jumbotron-fluid .pattern-mockup {
           transform: translateX(50%);
   top: -155px;
   width: 400px;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+  max-width: 100%;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
 }
 
 @media (min-width: 992px) {

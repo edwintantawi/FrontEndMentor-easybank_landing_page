@@ -76,7 +76,7 @@ section.jumbotron-fluid {
     top: -50px;
     right: 0;
     width: 100%;
-    height: fit-content;
+    // height: fit-content;
 
     @include breakpoint(lg) {
       display: none;
@@ -98,7 +98,8 @@ section.jumbotron-fluid {
     transform: translateX(50%);
     top: -155px;
     width: 400px;
-    max-width: fit-content;
+    max-width: 100%;
+    max-height: fit-content;
 
     @include breakpoint(lg) {
       right: -130px;
