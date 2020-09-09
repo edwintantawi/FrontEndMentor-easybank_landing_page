@@ -1,0 +1,110 @@
+section.articles {
+  background-color: $veryLightGray;
+  padding: 120px 16px;
+  text-align: left;
+  color: $darkBlue;
+
+  @include breakpoint(lg) {
+    padding: 120px 0;
+  }
+
+
+
+  .title {
+    padding: 0 16px;
+
+    h2 {
+      margin-bottom: 60px;
+    }
+
+    @include breakpoint(lg) {
+      padding: 0;
+    }
+  }
+
+  .article-wraper:last-child .article {
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .article {
+    background-color: $white;
+
+    border-radius: 6px;
+    overflow: hidden;
+    transition: 300ms;
+
+    margin-right: 0;
+    margin-bottom: 20px;
+
+    @include breakpoint(lg) {
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+
+
+
+
+
+
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1);
+
+      @include breakpoint(lg) {
+        transform: scale(1.05);
+      }
+    }
+
+    .pic {
+      width: 100%;
+      height: 210px;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .pic-1 {
+      background-image: url(/src/images/image-currency.jpg);
+    }
+
+    .pic-2 {
+      background-image: url(/src/images/image-restaurant.jpg);
+    }
+
+    .pic-3 {
+      background-image: url(/src/images/image-plane.jpg);
+    }
+
+    .pic-4 {
+      background-image: url(/src/images/image-confetti.jpg);
+    }
+
+
+
+    .text {
+      padding: 30px 20px;
+
+      h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        color: $darkBlue;
+      }
+
+      p,
+      small {
+        color: $grayishBlue;
+        margin: 0;
+      }
+
+      small {
+        display: block;
+        margin-bottom: 12px !important;
+      }
+
+      p {
+        font-size: 0.875rem;
+      }
+    }
+  }
+}

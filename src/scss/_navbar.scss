@@ -1,0 +1,128 @@
+nav {
+  background-color: $white;
+  padding: 0 26px;
+  z-index: 10;
+
+  @include breakpoint(lg) {
+    margin: 0;
+  }
+
+  // logo
+  .logo {
+    display: inline;
+    padding: 23px 0;
+
+    @include breakpoint(lg) {
+      padding: 30.5px 0;
+    }
+  }
+
+  // navigation
+  .navigation {
+    display: none;
+    margin: 0;
+
+    @include breakpoint(lg) {
+      display: flex;
+    }
+
+    li {
+      list-style: none;
+      margin: 0 17.5px;
+
+      a {
+        position: relative;
+        color: $grayishBlue;
+        font-weight: 400;
+        padding: 30.5px 0;
+
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -3px;
+          right: 0;
+          left: auto;
+          width: 0%;
+          height: 6px;
+          transition: .4s;
+          background-image: linear-gradient(to right, $limeGreen, $brightCyan);
+        }
+
+        &:hover {
+          color: $darkBlue;
+
+          &::after {
+            right: auto;
+            left: 0;
+            bottom: -3px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .cta {
+    display: none;
+
+    @include breakpoint(lg) {
+      display: block;
+    }
+  }
+
+  #toggle {
+    display: block;
+
+    @include breakpoint(lg) {
+      display: none;
+    }
+  }
+
+}
+
+.navbar-mobile {
+  visibility: hidden;
+  position: fixed;
+  width: 90%;
+  background-color: $white;
+  right: 50%;
+  top: 100px;
+  transform: translateX(50%);
+  border-radius: 6px;
+  z-index: 10;
+
+
+  // navigation
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+
+    li {
+      text-align: center;
+      list-style: none;
+
+
+      a {
+        display: block;
+        color: $darkBlue;
+        font-weight: 400;
+        font-size: 1.0625rem;
+        padding: 16px 0;
+      }
+    }
+  }
+}
+
+.blur {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  background-image: linear-gradient(to bottom, $darkBlue, rgba(0, 0, 0, .1));
+  ;
+}

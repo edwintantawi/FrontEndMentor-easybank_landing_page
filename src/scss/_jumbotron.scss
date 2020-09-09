@@ -1,0 +1,118 @@
+section.jumbotron-fluid {
+  position: relative;
+
+  height: 695px;
+  background-color: $veryLightGray;
+  color: $darkBlue;
+
+
+  .content {
+    margin-top: 320px;
+    text-align: center;
+    padding: 16px !important;
+
+    h1 {
+      font-size: 2.5rem;
+      // font-size: 3.625rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 36px 0 42px;
+      color: $grayishBlue;
+    }
+
+    .cta {
+      padding-top: 13.9px;
+      padding-bottom: 13.9px;
+    }
+
+
+    @include breakpoint(lg) {
+      margin-top: 0;
+      text-align: left;
+      padding: 0 !important;
+
+      h1 {
+
+        font-size: 3.5rem;
+      }
+
+      p {
+        font-size: 1.125rem;
+      }
+    }
+
+  }
+
+
+  img.pattern {
+    position: absolute;
+  }
+
+  .pattern-1 {
+    display: none;
+    right: -410px;
+    // top: -245px;
+    bottom: -78px;
+
+    @include breakpoint(lg) {
+      display: block;
+    }
+
+    @media (min-width: 980px) and (max-width: 1488px) {
+      bottom: 80px;
+      width: 100%;
+    }
+
+    // @media (min-width: 980px) and (max-width: 1500px) {
+
+    // }
+
+  }
+
+  .pattern-1-mobile {
+    display: block;
+    top: -50px;
+    right: 0;
+    width: 100%;
+    height: fit-content;
+
+    @include breakpoint(lg) {
+      display: none;
+    }
+
+    @media (min-width: 600px) {
+      width: 100%;
+      height: fit-content;
+    }
+
+    @media (max-width: 320px) {
+      width: 100%;
+    }
+
+  }
+
+  .pattern-mockup {
+    right: 50%;
+    transform: translateX(50%);
+    top: -155px;
+    width: 400px;
+    max-width: fit-content;
+
+    @include breakpoint(lg) {
+      right: -130px;
+      transform: none;
+      width: 53%;
+      top: -130px;
+    }
+
+    @media (max-width: 320px) {
+      top: -130px;
+      width: 110%;
+    }
+  }
+
+
+
+}

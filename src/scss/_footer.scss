@@ -1,0 +1,96 @@
+footer {
+  background-color: $darkBlue;
+
+  padding: 60px 16px;
+  text-align: center;
+
+  @include breakpoint(lg) {
+    text-align: left;
+    padding: 60px 0;
+  }
+
+  .social-media {
+    margin: 40px 0;
+
+    @include breakpoint(lg) {
+      margin: 0;
+    }
+
+    a {
+      color: $white;
+      font-size: 32px;
+      margin-right: 10px;
+      text-decoration: none;
+      transition: 200ms;
+
+      @include breakpoint(lg) {
+        font-size: 22px;
+      }
+
+      &:hover {
+        color: $limeGreen;
+      }
+    }
+  }
+
+  ul {
+    margin: 0 0 20px 0;
+
+    @include breakpoint(lg) {
+      margin: 0;
+    }
+
+    li {
+      list-style: none;
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        color: $white;
+        transition: 200ms;
+
+        &:hover {
+          color: $limeGreen;
+        }
+      }
+    }
+  }
+
+
+  .cta {
+    display: block;
+    // padding-top: 13.9px;
+    // padding-bottom: 13.9px;
+    height: 45.4px;
+    width: 171.55px;
+
+    margin: 30px auto 35px;
+
+    @include breakpoint(lg) {
+      margin: 0 0 0 auto;
+    }
+  }
+
+  .copyright {
+    text-align: center;
+
+    p {
+      color: $grayishBlue;
+      margin: 0;
+    }
+
+    @include breakpoint(lg) {
+      text-align: right;
+    }
+  }
+
+  .flexing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+}

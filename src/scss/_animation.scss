@@ -1,0 +1,64 @@
+@keyframes slidedown {
+  1% {
+    visibility: hidden;
+    // opacity: 0;
+    top: -900px;
+  }
+
+  100% {
+    visibility: visible;
+    top: 100px;
+  }
+}
+
+.slidedown {
+  animation: slidedown 700ms ease-in-out forwards;
+}
+
+@keyframes slideup {
+  1% {
+    visibility: visible;
+    top: 100px;
+  }
+
+  100% {
+    visibility: hidden;
+    top: -900px;
+  }
+}
+
+.slideup {
+  animation: slideup 700ms ease-in-out forwards;
+}
+
+@keyframes fadein {
+  1% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.fadein {
+  animation: fadein 600ms ease-in-out forwards;
+}
+
+@keyframes fadeout {
+  1% {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.fadeout {
+  animation: fadeout 600ms ease-in-out forwards;
+}

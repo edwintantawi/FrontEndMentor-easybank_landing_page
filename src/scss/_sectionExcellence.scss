@@ -1,0 +1,61 @@
+section.excellence {
+  padding: 120px 16px;
+  text-align: center;
+  color: $darkBlue;
+
+  @include breakpoint(lg) {
+    padding: 120px 0;
+    text-align: left;
+  }
+
+  p {
+    color: $grayishBlue;
+    margin: 0;
+  }
+
+
+
+  .title {
+    padding: 0 16px;
+    margin-bottom: 80px;
+
+    @include breakpoint(lg) {
+      padding-right: 50px;
+      margin-bottom: 80px;
+    }
+  }
+
+  .parts {
+    .part {
+      margin-bottom: 38px;
+
+      @include breakpoint(lg) {
+        margin-bottom: 0;
+      }
+
+      &:last-child .text {
+        padding-right: 0 !important;
+      }
+
+      .text {
+        padding-right: 0;
+
+        @include breakpoint(lg) {
+          padding-right: 34px !important;
+        }
+
+        h4 {
+          font-size: 1.5625rem;
+          margin: 32px 0 32px;
+
+          @include breakpoint(lg) {
+            margin: 42px 0 30px;
+          }
+        }
+      }
+    }
+
+  }
+
+
+}
