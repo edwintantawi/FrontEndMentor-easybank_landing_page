@@ -1,3 +1,4 @@
+AOS.init();
 const toggle = document.querySelector('#toggle');
 const navbarMobile = document.querySelector('.navbar-mobile');
 const blur = document.querySelector('.blur');
