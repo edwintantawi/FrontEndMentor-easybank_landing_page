@@ -1,5 +1,5 @@
 @-webkit-keyframes slidedown {
-  1% {
+  0% {
     visibility: hidden;
     top: -900px;
   }
@@ -10,7 +10,7 @@
 }
 
 @keyframes slidedown {
-  1% {
+  0% {
     visibility: hidden;
     top: -900px;
   }
@@ -26,7 +26,7 @@
 }
 
 @-webkit-keyframes slideup {
-  1% {
+  0% {
     visibility: visible;
     top: 100px;
   }
@@ -37,7 +37,7 @@
 }
 
 @keyframes slideup {
-  1% {
+  0% {
     visibility: visible;
     top: 100px;
   }
@@ -53,7 +53,7 @@
 }
 
 @-webkit-keyframes fadein {
-  1% {
+  0% {
     visibility: hidden;
     opacity: 0;
   }
@@ -64,7 +64,7 @@
 }
 
 @keyframes fadein {
-  1% {
+  0% {
     visibility: hidden;
     opacity: 0;
   }
@@ -80,7 +80,7 @@
 }
 
 @-webkit-keyframes fadeout {
-  1% {
+  0% {
     visibility: visible;
     opacity: 1;
   }
@@ -91,7 +91,7 @@
 }
 
 @keyframes fadeout {
-  1% {
+  0% {
     visibility: visible;
     opacity: 1;
   }

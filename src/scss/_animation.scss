@@ -1,5 +1,5 @@
 @keyframes slidedown {
-  1% {
+  0% {
     visibility: hidden;
     // opacity: 0;
     top: -900px;
@@ -16,7 +16,7 @@
 }
 
 @keyframes slideup {
-  1% {
+  0% {
     visibility: visible;
     top: 100px;
   }
@@ -32,7 +32,7 @@
 }
 
 @keyframes fadein {
-  1% {
+  0% {
     visibility: hidden;
     opacity: 0;
   }
@@ -48,7 +48,7 @@
 }
 
 @keyframes fadeout {
-  1% {
+  0% {
     visibility: visible;
     opacity: 1;
   }
