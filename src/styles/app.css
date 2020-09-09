@@ -119,7 +119,7 @@ html {
 body {
   position: relative;
   padding-top: 85px;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 body::-webkit-scrollbar {
@@ -476,7 +476,7 @@ section.jumbotron-fluid .pattern-mockup {
 @media (max-width: 320px) {
   section.jumbotron-fluid .pattern-mockup {
     top: -130px;
-    width: 110%;
+    width: 100%;
   }
 }
 
