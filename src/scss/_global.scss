@@ -46,7 +46,8 @@ a {
   padding: 11.5px 36px;
   font-size: 0.9375rem;
   display: block;
-  width: 171.55px;
+  min-width:
+    171.55px;
 
   &:hover {
     color: $white;

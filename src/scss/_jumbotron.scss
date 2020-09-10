@@ -26,6 +26,7 @@ section.jumbotron-fluid {
       padding-top: 13.9px;
       padding-bottom: 13.9px;
       margin: auto;
+      width: fit-content;
 
       @include breakpoint(lg) {
         margin-right: auto;

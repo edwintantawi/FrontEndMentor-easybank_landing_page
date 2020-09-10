@@ -161,7 +161,7 @@ a {
   padding: 11.5px 36px;
   font-size: 0.9375rem;
   display: block;
-  width: 171.55px;
+  min-width: 171.55px;
 }
 
 .cta:hover {
@@ -385,6 +385,9 @@ section.jumbotron-fluid .content .cta {
   padding-top: 13.9px;
   padding-bottom: 13.9px;
   margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 @media (min-width: 992px) {
