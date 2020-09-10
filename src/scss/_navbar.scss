@@ -117,12 +117,12 @@ nav {
 
 .blur {
   visibility: hidden;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: 9;
-  background-image: linear-gradient(to bottom, $darkBlue, rgba(0, 0, 0, .1));
+  background-image: linear-gradient(to bottom, $darkBlue, rgba(0, 0, 0, 0));
   ;
 }
